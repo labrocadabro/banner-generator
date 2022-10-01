@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem 0;
+}
+main {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+#banner-img {
+	width: 100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	aspect-ratio: 2/1;
+}
+
+#banner-img img {
+	width: 100%;
+}
+
+#banner-text {
+	font-size:40px;
+	color: white;
+	text-shadow: 4px 4px 20px #000000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10rem;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
