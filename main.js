@@ -11,6 +11,7 @@ async function getPhoto() {
 	const query = document.getElementById('photo-search').value.trim();
 	const res = await fetch(`https://api.unsplash.com/search/photos?page=${page}&query=${query}&client_id=${unsplashKey}`);
 	const data = await res.json();
+	console.log(res, data)
 	const img = data.results[Math.floor(Math.random() * 10)];
 	const bannerImg = document.getElementById('banner-img');
 	const bannerCredits = document.getElementById('banner-credits');
@@ -20,7 +21,7 @@ async function getPhoto() {
 
 function addText() {
 	const text = document.getElementById('text-value').value;
-	bannerText = document.getElementById('banner-text');
+	const bannerText = document.getElementById('banner-text');
 	console.log(bannerText)
 	bannerText.innerHTML = text;
 }

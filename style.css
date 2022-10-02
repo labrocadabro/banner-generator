@@ -12,7 +12,11 @@ header {
 main {
 	width: 80%;
 	margin: 0 auto;
+}
+#banner {
 	position: relative;
+	width: 100%;
+	aspect-ratio: 2/1;
 }
 #banner-img {
 	width: 100%;
@@ -28,17 +32,52 @@ main {
 }
 
 #banner-text {
-	font-size:40px;
 	color: white;
+	font-size: 20px;
+	padding: 0 1rem;
 	text-shadow: 4px 4px 20px #000000;
 	position: absolute;
+	margin: 0;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	padding: 10rem;
 	display:flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	border: 1px solid red
 }
+
+@media (min-width: 600px) {
+	#banner-text {
+		font-size: 25px;
+		padding: 0 3rem;
+	}
+}
+
+@media (min-width: 800px) {
+	#banner-text {
+		font-size: 30px;
+		padding: 0 5rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	#banner-text {
+		font-size: 35px;
+		padding: 0 7.5rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	#banner-text {
+		font-size: 40px;
+		padding: 0 10rem;
+	}
+}
+
+
+
+
+
