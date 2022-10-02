@@ -46,7 +46,6 @@ main {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	border: 1px solid red
 }
 
 @media (min-width: 600px) {
